@@ -19,7 +19,7 @@ body{
     height: 80vh;
     position: relative;
     overflow: hidden;
-    border: 1px solid red;
+
 }
 .main-container span{
     display: flex;
