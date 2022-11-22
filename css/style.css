@@ -15,12 +15,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 50vh;
+    width: 80vw;
+    height: 80vh;
     position: relative;
     overflow: hidden;
+    border: 1px solid red;
 }
-.main-container span img{
+.main-container span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,13 +32,13 @@ display: flex;
     border: 1px solid black;
     width: 20rem;
     height: 10rem;
-    margin: 20px;
+
     }
 
 img{
     filter: grayscale(90%);
     position: relative;
-    top:5px;
+    bottom:5px;
     width: 300px;
     border: 1px solid black;
 
@@ -47,16 +48,16 @@ span:first-child{
     transform: rotate(12deg) translate(10px, 1px);
     z-index: 6;
     position: absolute;
-     top:10px;
-    left: 10px;
+     top:120px;
+    left: 400px;
     opacity:0.70;
 }
 span:nth-child(2){
-    transform: rotate(-12deg) translate(10px, 1px);
+    transform: rotate(-11deg) translate(10px, 1px);
     z-index: 5;
     position: absolute;
-    top:10px;
-    left: 300px;
+    top:250px;
+    left: 400px;
     opacity:0.70;
 }
 
@@ -64,15 +65,22 @@ span:nth-child(3){
     transform: rotate(13deg) translate(10px, 1px);
     z-index: 3;
     position: absolute;
-    top: 200px;
-    left: 10px;
+    top: 380px;
+    left: 400px;
     opacity:0.70;
 }
 span:last-child{
-    transform: rotate(336deg) translate(10px, 1px);
+    transform: rotate(345deg) translate(10px, 1px);
     z-index: 2;
     position: absolute;
-    top:200px;
-    left:300px;
+    top:540px;
+    left:400px;
     opacity:0.70;
+}
+
+@media (max-width: 768px) {
+.main-container{
+    width: 100vw;
+    height: 60vw;
+}
 }
